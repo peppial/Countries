@@ -6,7 +6,7 @@ import { getCountries } from '../services/country-service'
 function Countries() {
 
   const [countries, setCountries] = React.useState([]);
-  
+
   React.useEffect(() => {
     const load = async () => {
       const data = await getCountries();
@@ -29,7 +29,7 @@ function Countries() {
   },
   {
     Header: 'Flag', Cell: tableProps => (
-      <div><img width="100" src={tableProps.row.original.flag} /></div>
+      <div><img className="image" src={tableProps.row.original.flag} /></div>
     )
   },
   ]

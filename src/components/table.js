@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import Details from './details'
 import { useFilters } from 'react-table/dist/react-table.development'
 import GlobalFilter from './global-filter'
+
 function Table({ columns, data }) {
     const [counter, setCounter] = React.useState(0);
     const [details, setDetails] = React.useState(false);
@@ -92,17 +93,11 @@ function Table({ columns, data }) {
                 setGlobalFilter={setGlobalFilter}
             />
             <div className="pagination">
-                <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-                    {"<<"}
-                </button>{" "}
                 <button onClick={() => previousPage()} disabled={!canPreviousPage}>
                     {"<"}
                 </button>{" "}
                 <button onClick={() => nextPage()} disabled={!canNextPage}>
                     {">"}
-                </button>{" "}
-                <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
-                    {">>"}
                 </button>{" "}
                 <span>
                     Page{" "}

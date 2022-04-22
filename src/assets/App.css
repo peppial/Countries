@@ -132,3 +132,7 @@ table{
   color: rgb(14, 89, 53);
   font-size: larger;
 }
+
+.image{
+  max-width:100px;
+}

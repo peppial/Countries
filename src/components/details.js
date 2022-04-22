@@ -2,13 +2,12 @@ import React from "react";
 
 
 function Details(props) {
-
-
     const row = props.row;
     if (props.show)
         return <div id="myModal" className="modal">
             <div className="modal-content">
-                <div className="row">                <span className="column">
+                <div className="row">                
+                <span className="column">
                     <h2>{row ? row.name : ""}</h2>
                     <h2><img width="200" src={row ? row.flag : ""} /></h2>
                 </span>
