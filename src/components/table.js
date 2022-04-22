@@ -58,8 +58,8 @@ function Table({ columns, data }) {
         setPageSize,
         state: { pageIndex, pageSize },
         state,
-        preGlobalFilteredRows, // new
-        setGlobalFilter, // new
+        preGlobalFilteredRows, 
+        setGlobalFilter, 
     } = useTable(
         {
             columns,
@@ -145,8 +145,8 @@ function Table({ columns, data }) {
                                     <span>
                                         {column.isSorted
                                             ? column.isSortedDesc
-                                                ? ' 🔽'
-                                                : ' 🔼'
+                                                ? <span className="sorter"> {"\u25b4"}</span>
+                                                : <span className="sorter"> {"\u25be"}</span>
                                             : ''}
                                     </span>
 

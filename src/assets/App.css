@@ -127,3 +127,8 @@ input {
 table{
   width:80%;
 }
+
+.sorter{
+  color: rgb(14, 89, 53);
+  font-size: larger;
+}

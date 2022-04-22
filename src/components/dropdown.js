@@ -11,7 +11,7 @@ function DropDown() {
     const [input, setInput] = useState("");
     const [details, setDetails] = React.useState(false);
     const [currentRow, setCurrentRow] = React.useState(0);
-    
+
 
     const debounce = (func) => {
         let timer;
@@ -44,8 +44,6 @@ function DropDown() {
     const optimizedFn = useCallback(debounce(changeHandler), []);
 
     const onClick = (e) => {
-        console.log(e.target.innerText)
-        console.log(filteredSuggestionsData.find(o => o.name === e.target.innerText));
         setCurrentRow(filteredSuggestionsData.find(o => o.name === e.target.innerText));
         console.log(currentRow);
         setDetails(true);
@@ -107,7 +105,7 @@ function DropDown() {
 
     return (
         <>
-            <Details row={currentRow} show={details}  />
+            <Details row={currentRow} show={details} />
 
             <input
                 className="autocomplete"

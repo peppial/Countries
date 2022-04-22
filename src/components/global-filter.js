@@ -1,5 +1,5 @@
 import React from 'react'
-import { useTable, useSortBy, usePagination, useGlobalFilter, useAsyncDebounce } from 'react-table'
+import { useAsyncDebounce } from 'react-table'
 
 function GlobalFilter({
     preGlobalFilteredRows,

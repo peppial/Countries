@@ -1,8 +1,8 @@
 import React from "react";
 
-const getCompleted = (completed) =>{
+const getCompleted = (completed) => {
   if (completed === 0) return "Progress:";
-  return `Progress: ${completed>100?100:completed}%`;
+  return `Progress: ${completed > 100 ? 100 : completed}%`;
 };
 
 function ProgressBar({ completed }) {
