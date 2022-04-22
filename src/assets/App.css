@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: 1px solid #777;
+  padding: 4px;
+}
+
+.modal {
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; 
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+input {
+  border: 1px solid #000;
+  outline: none;
+  padding: 0 0.5rem;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.autocomplete{
+  height: 30px;
+  width: 283px;
+}
+
+.suggestions {
+  border: 1px solid hsla(218, 100%, 42%, 0.5);
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: 300px;
+}
+
+.suggestions::-webkit-scrollbar {
+  width: 0.2rem;
+  height: 0rem;
+  border-radius: 20px;
+}
+
+.suggestions::-webkit-scrollbar-thumb {
+  background-color: hsla(218, 100%, 42%, 1);
+}
+
+.suggestions li {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background: linear-gradient(
+    90deg,
+    hsla(218, 100%, 42%, 0.6) 0%,
+    hsla(0, 0%, 98%, 1) 200%
+  );
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+table{
+  width:80%;
+}
