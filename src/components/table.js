@@ -6,7 +6,7 @@ import Details from './details'
 import { useFilters } from 'react-table/dist/react-table.development'
 import GlobalFilter from './global-filter'
 
-function Table({ columns, data }) {
+const Table = ({ columns, data }) => {
     const [counter, setCounter] = React.useState(0);
     const [details, setDetails] = React.useState(false);
     const [currentRow, setCurrentRow] = React.useState(0);

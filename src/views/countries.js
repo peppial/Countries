@@ -3,7 +3,7 @@ import Table from '../components/table'
 import DropDown from '../components/dropdown'
 import { getCountries } from '../services/country-service'
 
-function Countries() {
+const Countries = () => {
 
   const [countries, setCountries] = React.useState([]);
 

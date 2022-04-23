@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Details(props) {
+const Details = (props) => {
     const row = props.row;
     if (props.show)
         return <div id="myModal" className="modal">

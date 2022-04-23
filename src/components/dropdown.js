@@ -3,7 +3,7 @@ import { useState, useCallback } from "react";
 import { getCountriesContaining } from "../services/country-service";
 import Details from "./details";
 
-function DropDown() {
+const DropDown = () => {
     const [filteredSuggestions, setFilteredSuggestions] = useState([]);
     const [filteredSuggestionsData, setFilteredSuggestionsData] = useState([]);
     const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(0);
