@@ -4,7 +4,7 @@ import './views/countries'
 import Countries from './views/countries';
 
 
-function App() {
+const App = () => {
   return (
     <Countries />
   );
